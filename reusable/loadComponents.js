@@ -7,6 +7,6 @@ function loadComponent(id, file) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadComponent("navbar-container", "navbar.html");
-    loadComponent("footer-container", "footer.html");
+    loadComponent("navbar-container", "reusable/navbar.html");
+    loadComponent("footer-container", "reusable/footer.html");
 });
