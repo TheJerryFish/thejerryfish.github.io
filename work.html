@@ -7,16 +7,7 @@
 </head>
 <body>
     <header><h1>Work Experience</h1></header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="work.html">Work Experience</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="navbar-container"></div>
 
     <main>
         <h2>Software Dev Intern - LinGang</h2>
@@ -29,6 +20,18 @@
         <p>Led AP review sessions and created solution content.</p>
     </main>
 
-    <footer>© 2025 Jiayi Gao</footer>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
 </body>
 </html>

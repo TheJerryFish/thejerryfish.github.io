@@ -13,6 +13,14 @@ header {
     text-align: center;
 }
 
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Navigation styles */
 nav ul {
     display: flex;
     justify-content: center;
@@ -33,16 +41,22 @@ nav a {
     font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+/* Footer styles */
+footer, #footer {
+    background: #eee;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
 }
 
-footer {
-    background: #eee;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #555;
+.footer-left a, .footer-right a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-left p, .footer-right p {
+    margin: 0.2rem 0;
 }
