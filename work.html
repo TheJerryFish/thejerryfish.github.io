@@ -19,19 +19,7 @@
         <h2>TA - Test Daily</h2>
         <p>Led AP review sessions and created solution content.</p>
     </main>
-
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            });
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
-            });
-    </script>
+    <div id="footer-container"></div>
+    <script src="load-components.js"></script>
 </body>
 </html>
