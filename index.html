@@ -15,6 +15,13 @@
     </main>
 
     <div id="footer-container"></div>
-    <script src="reusable/loadComponents.js"></script>
+    <script src="reusable/loadComponents.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <div id="particles-js"></div>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 </html>
