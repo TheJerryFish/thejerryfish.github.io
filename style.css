@@ -33,6 +33,13 @@ main {
     margin: auto;
 }
 
+main p {
+  font-weight: 300;
+  color: #ccc;
+  margin-top: 0.3rem;
+  margin-bottom: 5rem;
+}
+
 /* Navigation styles */
 nav ul {
     display: flex;
@@ -56,20 +63,24 @@ nav a {
 
 /* Footer styles */
 footer, #footer {
-    background: #eee;
-    color: #555;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 2rem;
-    font-size: 0.9rem;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 4rem);
 }
 
 .footer-left a, .footer-right a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .footer-left p, .footer-right p {
-    margin: 0.2rem 0;
+    margin: 0.2rem;
 }
